@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('img/fondo_RV.jpg'); /* Reemplaza 'tu-imagen-de-fondo.jpg' con la ruta correcta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+  }
+  
+  .image-container img {
+    display: block;
+    width: 200px; /* Puedes ajustar el tamaño de la imagen según tus preferencias */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1);
+  }
+  
+  .image-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
